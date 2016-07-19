@@ -1,0 +1,83 @@
+<!DOCTYLE html>
+<html>
+
+    <head lang="en">
+        <title> Math Game </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+        <!--Create external css file-->
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+
+    <body>
+        <div id="nameSection">
+            <p id="name">
+                Train your brain!
+            </p>
+
+            <p>Enter upper bound: <input id="difficulty" type="number" required>
+                <span>Enter time limit (second): <input id="howLong" type="number" required></span>
+            </p>
+
+            <p>
+                Select the operation:
+                <select id="operations">
+                    <option value="addition">addition</option>
+                    <option value="subtraction">subtraction</option>
+                    <option value="multiplication">multiplication</option>
+                    <option value="division">division</option>
+                    <option value="random">random</option>
+
+                </select>
+            </p>
+        </div>
+        <div id="container">
+            <div id="score">
+                score: <span id="scorevalue"> 0 </span>
+            </div>
+
+            <div id="life">
+                life:
+                <span id="guesses"> 3 </span>
+            </div>
+
+            <div id="correct">
+                Correct
+            </div>
+
+            <div id="wrong">
+                Try again
+            </div>
+
+            <div id="question">
+            </div>
+
+            <div id="instruction">
+                Click on the correct answer
+            </div>
+
+            <div id="choices">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <div id="box4" class="box"></div>
+            </div>
+
+            <div id="start"> Start game </div>
+
+            <div id="time"><span id="timeRemaining"> Time: s</span></div>
+            <div id="gameover">
+                <p> GAME OVER</p>
+                <P>YOUR SCORE IS 20</P>
+            </div>
+
+            <script src="javascript.js">
+
+            </script>
+        </div>
+        <hr>
+        &#169; lenkdhoa 2016
+    </body>
+</html>
